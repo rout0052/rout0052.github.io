@@ -1,0 +1,42 @@
+body {
+    background-color: #aad4cf;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+header {
+   position:relative;
+
+}
+
+footer {   
+    text-align: right;
+}
+
+nav, article, aside, form, footer {
+    background-color: #d4e9e7;
+    padding:2%;
+}
+
+article > img {
+    float:left;
+    width:20%;
+    padding-right:2%;
+    padding-bottom:2%;
+}
+
+.head-title {
+    color:white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#middle-nav {
+    border-color:black;
+    border-left:3px;
+    border-right:3px;
+}
+
