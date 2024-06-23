@@ -7,6 +7,7 @@ body {
 
 header {
    position:relative;
+   background-color: #d4e9e7;
 
 }
 
@@ -14,16 +15,50 @@ footer {
     text-align: right;
 }
 
-nav, article, aside, form, footer {
-    background-color: #d4e9e7;
-    padding:2%;
+nav {
+    display:flex;
+    justify-content: space-around;
+    
 }
 
-article > img {
-    float:left;
-    width:20%;
-    padding-right:2%;
-    padding-bottom:2%;
+button {
+    border: 1px solid black;
+    padding:1%;
+    background-color:transparent;
+}
+
+textarea {
+    resize:none;
+    width:95%;
+}
+
+button:hover {
+    background-color
+}
+
+nav, article, aside, form, footer {
+    background-color: #d4e9e7;
+    padding:1%;
+}
+
+nav > a {
+    padding-left:10%;
+    padding-right:10%;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom:1%;
+    margin-top:1%;
+}
+
+a:link {
+    color:black;
+    text-decoration:none;
+}
+
+a:visited {
+    color:black;
 }
 
 .head-title {
@@ -34,9 +69,23 @@ article > img {
     transform: translate(-50%, -50%);
 }
 
-#middle-nav {
-    border-color:black;
-    border-left:3px;
-    border-right:3px;
+.head-image {
+    width:100%;
+}
+
+.flex-b {
+    display: inline;
+}
+
+.art-star {
+    float:left;
+    width:20%;
+    padding-right:2%;
+    padding-bottom:2%;
+}
+
+.middle-nav {
+    border-left:solid 1px;
+    border-right:solid 1px;
 }
 
