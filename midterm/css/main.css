@@ -1,3 +1,4 @@
+/* Set the entire visible screen to have a background of #aad4cf, as well as significant margins on either side to show this colour.  */
 body {
     background-color: #aad4cf;
     font-family:Arial, Helvetica, sans-serif;
@@ -5,20 +6,20 @@ body {
     margin-right:20%;
 }
 
+/* The position: relative selector allows for the title text to float on top using absolute */
 header {
    position:relative;
    background-color: #d4e9e7;
-
 }
 
 footer {   
     text-align: right;
 }
 
+/* Makes the nav a block-level flex container, and evenly spaces the flexed anchor tags.  */
 nav {
     display:flex;
     justify-content: space-around;
-    
 }
 
 button {
@@ -27,31 +28,30 @@ button {
     background-color:transparent;
 }
 
+/* Makes the textarea unable to be resized (in the reference picture, there was no pull tab to edit size), while taking up the majority of the fieldset. */
 textarea {
     resize:none;
     width:95%;
 }
 
 button:hover {
-    background-color
+    background-color:#aad4cf;
 }
 
+/* Adds background colour to the content of the site, as well as padding for easy reading */
 nav, article, aside, form, footer {
     background-color: #d4e9e7;
     padding:1%;
 }
 
-nav > a {
-    padding-left:10%;
-    padding-right:10%;
-}
-
+/* Separates form items onto different lines, and adds margins for spacing */
 label, input, button {
     display: block;
     margin-bottom:1%;
     margin-top:1%;
 }
 
+/* Remove link styling */
 a:link {
     color:black;
     text-decoration:none;
@@ -61,6 +61,7 @@ a:visited {
     color:black;
 }
 
+/* Positions the header text centered on top of the image. */
 .head-title {
     color:white;
     position:absolute;
@@ -69,14 +70,17 @@ a:visited {
     transform: translate(-50%, -50%);
 }
 
+/* Dynamically scales the size of the header image to be 100% of its space - which given the margins, will always stay the 60% the content is allowed in. */
 .head-image {
     width:100%;
 }
 
+/* Class applied to the radio buttons labels and inputs in the form (flex-b = flex buttons) to display them as inline instead of block. */
 .flex-b {
     display: inline;
 }
 
+/* Class for a photo floated on the left side of an article, with right and bottom padding to separate from the body text  */
 .art-star {
     float:left;
     width:20%;
@@ -84,8 +88,13 @@ a:visited {
     padding-bottom:2%;
 }
 
+/* Class to add the bar separations through left and right borders */
 .middle-nav {
     border-left:solid 1px;
     border-right:solid 1px;
+    
+    padding-left:15%;
+    padding-right:15%;
+    
 }
 
