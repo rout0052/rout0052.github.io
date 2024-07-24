@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome JS Integration-->
+    <script src="https://kit.fontawesome.com/6d81baec61.js" crossorigin="anonymous"></script>
+
+    <!-- Open Sans Font - Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Project Title & Icon -->
+    <title>rout0052 Final Project</title>
+    <link rel="icon" type="image/x-icon" href="images\logo.png">
+
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- ADD CSS RESET -->
+
+    <!-- Header: Contains Nav Bar and Welcome Landing-->
+    <header>
+        <nav> <!-- display inline on desktop -->
+            <img src="images\logo.png" alt="">
+
+            <!-- Navigation Links -->
+            <ul> <!-- remove list decorations and link styling. display inline on desktop. Add padding, etc to buttons -->
+                <li><a href="#">Home</a></li> <!-- change background and text color of first child -->
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Search Bar -->
+            <form>
+                <input type="text" placeholder="Search" name="search">
+                <!-- Font Awesome Integrated Symbol: Search. Used Inline -->
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+
+        <div> <!-- background image main-banner-->
+            <div class="wrapper transparent">
+                <!-- Wrapper Class centers and adds margin, transparent adds rgba background -->
+                <h1>Welcome To Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit culpa repellendus reprehenderit
+                    corrupti hic ipsam nostrum totam tenetur non illum excepturi harum doloribus esse natus at, dicta ad
+                    reiciendis illo!</p>
+
+                <a class="button" href="#contact"> <!-- Background color, padding -->
+                    <!-- Font Awesome Integrated Symbol: Right Facing Caret. Used Inline Throughout-->
+                    <h4>Connect With Us <i class="fa-solid fa-caret-right"></i></h4>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
+    <section id="about"> <!-- IDs used for on-page links throughout. Background color Change -->
+        <div class="wrapper"> <!-- Wrapper Class centers and adds margin -->
+            <img src="images\about-us.jpg" alt=""> <!-- Float, width 50% on desktop-->
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod sunt repellat, exercitationem porro ea
+               ratione vitae recusandae molestias quis quia quam laudantium quos? Consequatur ea ipsum eveniet in eius!
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
+               voluptatibus magni nihil minima qui repudiandae dolorum nisi suscipit, libero ut alias. Ullam quisquam quae
+               officiis.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="wrapper"> <!-- Flex layout on desktop of child divs. section#services > .button styling consistent background / padding other than last child which is semi transparent with border. Wrapper class centers and adds margin -->
+        
+        <h2>Our Services</h2>
+
+        <!-- Divs With Each Service - Flex Layout On Desktop -->
+        <div class="serve-boxes">
+            <div>
+                <img src="images\digital.jpg" alt="">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis quisquam culpa. Quod rerum,
+                    eveniet atque quisquam recusandae consequatur facere perferendis repellendus aliquid neque reprehenderit
+                    dolore minus, corporis asperiores dolor.</p>
+                <a href="#" class="button">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            
+            <div>
+                <img src="images\marketing.jpg" alt="">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat temporibus odio voluptate error
+                    quibusdam exercitationem qui, aut eaque dolorem aspernatur accusantium rem quos repellat culpa quisquam
+                    eos obcaecati facilis!</p>
+                <a href="#" class="button">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+           
+            <div>
+                <img src="images\video.jpg" alt="">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, perspiciatis nulla. Eum dolorem
+                    molestias modi, laboriosam non obcaecati sint dignissimos eveniet voluptatum magni, quibusdam debitis,
+                    sequi id quos nulla numquam.</p>
+                <a href="#" class="button">Video Plans <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            
+            <div>
+                <img src="images/web.jpg" alt="">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas at velit quisquam, ullam
+                    blanditiis reiciendis, maxime neque repudiandae, sapiente facere consequatur ipsum dolores optio vitae
+                    deleniti! Maiores, sapiente quae.</p>
+                <a href="#" class="button">Web Plans <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            
+            <div>
+                <img src="images\print.jpg" alt="">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eveniet sequi ipsam itaque alias
+                    eligendi optio unde animi. Perspiciatis quasi praesentium deleniti? Recusandae magni, illum vitae
+                    perspiciatis ut architecto provident.</p>
+                <a href="#" class="button">Print Plans <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Our Vision Section: Separated Wrapper Section for Background-Image bleed -->
+        <div> <!-- Background Image: vision -->
+            <div class="wrapper">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ex voluptatibus quo est, labore beatae, quam
+                    expedita eius deleniti facilis quidem harum obcaecati rem corporis culpa laboriosam omnis unde
+                    blanditiis.</p>
+                <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+        </div>
+    </section>
+
+    <!-- Three Star Media Team-->
+    <section id="team" class="wrapper">  <!-- Wrapper Class centers and adds margin -->
+        <h2>Our Team</h2>
+        <div class="grid-team"> <!-- Team Information displayed in 2x2 grid on desktop, with movement of the second image to grid (2,2) and second bio to (1,2) -->
+
+            <img src="images/john.jpg" class="grid-item" alt=""> <!-- Size down on desktop. Repeat for 2nd image-->
+            
+            <div class="grid-item"> <!-- Background color change. Repeat for 2nd div. -->
+                <h3>John Doe</h3>
+                <h4>CEO and Co-Owner</h4>
+                <hr> <!-- color change. Repeat for 2nd hr -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam distinctio officia fuga aperiam, ex, doloribus consectetur accusantium beatae officiis ad dolorum itaque expedita, vero temporibus? Omnis laboriosam ipsa debitis!</p>
+            </div>
+            
+            <img src="images/bob.jpg" class="grid-item" alt="">
+
+            <div class="grid-item">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-Owner</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda harum tenetur eos quod placeat ipsa at reprehenderit deserunt quidem fuga nesciunt error incidunt, quae qui quis odit asperiores. Exercitationem!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="wrapper"> <!-- Wrapper Class centers and adds margin -->
+        <h2>Contact Us</h2>
+        <div class="flex-info"> <!-- Contact information displayed in flex. On desktop, first row: form and map 50% using flex-basis and order, second row: chart 100%-->
+            <!-- Message Form -->
+            <div class="message">
+                <h3>Send Us A Message</h3>
+
+                <form action="#" method="post">
+                    <fieldset> <!-- Remove border and left p. Display all children as block. -->
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" type="text">
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="8"></textarea> <!-- Disable Resize. 8 rows estimate-->
+
+                        <button type="submit">Send</button> <!-- Style button -->
+                    </fieldset>
+                </form>
+            </div>
+            
+            <!-- Hours Of Operation Chart -->
+            <div class="operation">
+                <h3>Hours Of Operation</h3>
+
+                <table> <!-- Add borders, right align  -->
+                    <thead> <!-- Add background color -->
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9AM - 6PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+
+            <!-- iFrame Map -->
+            <div class="map">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268326!2d-75.75750062420553!3d45.349937241056004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1721830485334!5m2!1sen!2sca"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Copyright Information-->
+    <footer> <!-- Background and text color -->
+        <p>&copy; Copyright Three Star Media, 2020</p>
+        <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+    </footer>
+
+</body>
+
+</html>
