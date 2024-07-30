@@ -25,11 +25,11 @@
 
 <body>
     <!-- ADD CSS RESET -->
-
     <!-- Header: Contains Nav Bar and Welcome Landing-->
     <header>
-        <nav> <!-- display inline on desktop -->
-            <img src="images\logo.png" alt="">
+        <nav class="wrapper"> <!-- display inline on desktop -->
+            <img src="images\logo.png"
+                alt="Square logo of three pale yellow stars on dark gold background that clip on the edges of the square and cut it off">
 
             <!-- Navigation Links -->
             <ul> <!-- remove list decorations and link styling. display inline on desktop. Add padding, etc to buttons -->
@@ -41,7 +41,7 @@
             </ul>
 
             <!-- Search Bar -->
-            <form>
+            <form action="#">
                 <input type="text" placeholder="Search" name="search">
                 <!-- Font Awesome Integrated Symbol: Search. Used Inline -->
                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -64,65 +64,79 @@
         </div>
     </header>
 
-    
+
     <section id="about"> <!-- IDs used for on-page links throughout. Background color Change -->
         <div class="wrapper"> <!-- Wrapper Class centers and adds margin -->
-            <img src="images\about-us.jpg" alt=""> <!-- Float, width 50% on desktop-->
+            <img src="images\about-us.jpg"
+                alt="Open concept room with wooden floors and brick walls with open doors that lead to an outdoor patio. In the forefront of the picture is a ping-pong table with two paddles holding a ball between them. In the background there is a long wooden table with black metal framed chairs, a dark blue couch, and plants.">
+            <!-- Float, width 50% on desktop-->
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod sunt repellat, exercitationem porro ea
-               ratione vitae recusandae molestias quis quia quam laudantium quos? Consequatur ea ipsum eveniet in eius!
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
-               voluptatibus magni nihil minima qui repudiandae dolorum nisi suscipit, libero ut alias. Ullam quisquam quae
-               officiis.
+                ratione vitae recusandae molestias quis quia quam laudantium quos? Consequatur ea ipsum eveniet in eius!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
+                voluptatibus magni nihil minima qui repudiandae dolorum nisi suscipit, libero ut alias. Ullam quisquam
+                quae
+                officiis.
             </p>
         </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="wrapper"> <!-- Flex layout on desktop of child divs. section#services > .button styling consistent background / padding other than last child which is semi transparent with border. Wrapper class centers and adds margin -->
-        
+    <section id="services" class="wrapper">
+        <!-- Flex layout on desktop of child divs. section#services > .button styling consistent background / padding other than last child which is semi transparent with border.-->
+
         <h2>Our Services</h2>
 
         <!-- Divs With Each Service - Flex Layout On Desktop -->
-        <div class="serve-boxes">
+        <div class="serve-boxes wrapper">
             <div>
-                <img src="images\digital.jpg" alt="">
+                <img src="images\digital.jpg"
+                    alt="Over the shoulder shot of a person on their laptop, typing on the laptop with their left hand, and holding their phoen in their right. The blurred background is in a cafe.">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis quisquam culpa. Quod rerum,
-                    eveniet atque quisquam recusandae consequatur facere perferendis repellendus aliquid neque reprehenderit
+                    eveniet atque quisquam recusandae consequatur facere perferendis repellendus aliquid neque
+                    reprehenderit
                     dolore minus, corporis asperiores dolor.</p>
                 <a href="#" class="button">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
-            
+
             <div>
-                <img src="images\marketing.jpg" alt="">
+                <img src="images\marketing.jpg"
+                    alt="Low angle shot of a silver laptop that reflects on the table it sits on. On the screen there are various charts and graphs in blue-teal-purple colours.">
                 <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat temporibus odio voluptate error
-                    quibusdam exercitationem qui, aut eaque dolorem aspernatur accusantium rem quos repellat culpa quisquam
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat temporibus odio voluptate
+                    error
+                    quibusdam exercitationem qui, aut eaque dolorem aspernatur accusantium rem quos repellat culpa
+                    quisquam
                     eos obcaecati facilis!</p>
                 <a href="#" class="button">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
-           
+
             <div>
-                <img src="images\video.jpg" alt="">
+                <img src="images\video.jpg"
+                    alt="Right hand holding an older iPhone that is on the loading screen for Youtube.">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, perspiciatis nulla. Eum dolorem
-                    molestias modi, laboriosam non obcaecati sint dignissimos eveniet voluptatum magni, quibusdam debitis,
+                    molestias modi, laboriosam non obcaecati sint dignissimos eveniet voluptatum magni, quibusdam
+                    debitis,
                     sequi id quos nulla numquam.</p>
                 <a href="#" class="button">Video Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
-            
+
             <div>
-                <img src="images/web.jpg" alt="">
+                <img src="images/web.jpg"
+                    alt="A cell phone and a pen on a coiled grid notebook with bright blue margins. The phone is an Android phone, open to the account creation page of Instagram.">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas at velit quisquam, ullam
-                    blanditiis reiciendis, maxime neque repudiandae, sapiente facere consequatur ipsum dolores optio vitae
+                    blanditiis reiciendis, maxime neque repudiandae, sapiente facere consequatur ipsum dolores optio
+                    vitae
                     deleniti! Maiores, sapiente quae.</p>
                 <a href="#" class="button">Web Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
-            
+
             <div>
-                <img src="images\print.jpg" alt="">
+                <img src="images\print.jpg"
+                    alt="There is a line of newspaper boxes for different organizations, in different colours and heights, sitting on a sidewalk in a metropolitan area.">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eveniet sequi ipsam itaque alias
                     eligendi optio unde animi. Perspiciatis quasi praesentium deleniti? Recusandae magni, illum vitae
@@ -135,42 +149,52 @@
         <div> <!-- Background Image: vision -->
             <div class="wrapper">
                 <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ex voluptatibus quo est, labore beatae, quam
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ex voluptatibus quo est, labore beatae,
+                    quam
                     expedita eius deleniti facilis quidem harum obcaecati rem corporis culpa laboriosam omnis unde
                     blanditiis.</p>
                 <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
-                </div>
+            </div>
         </div>
     </section>
 
     <!-- Three Star Media Team-->
-    <section id="team" class="wrapper">  <!-- Wrapper Class centers and adds margin -->
+    <section id="team" class="wrapper"> <!-- Wrapper Class centers and adds margin -->
         <h2>Our Team</h2>
-        <div class="grid-team"> <!-- Team Information displayed in 2x2 grid on desktop, with movement of the second image to grid (2,2) and second bio to (1,2) -->
+        <div class="grid-team">
+            <!-- Team Information displayed in 2x2 grid on desktop, with movement of the second image to grid (2,2) and second bio to (1,2) -->
 
-            <img src="images/john.jpg" class="grid-item" alt=""> <!-- Size down on desktop. Repeat for 2nd image-->
-            
+            <img src="images/john.jpg" class="grid-item"
+                alt="Full frame shot of John Doe, a young Black man with a high-taper fade, a beard, a horizontally striped pink and blue shirt and a golden necklace with a charm of the African continent. The blurred background is a wall of graffiti.">
+            <!-- Size down on desktop. Repeat for 2nd image-->
+
             <div class="grid-item"> <!-- Background color change. Repeat for 2nd div. -->
                 <h3>John Doe</h3>
                 <h4>CEO and Co-Owner</h4>
                 <hr> <!-- color change. Repeat for 2nd hr -->
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam distinctio officia fuga aperiam, ex, doloribus consectetur accusantium beatae officiis ad dolorum itaque expedita, vero temporibus? Omnis laboriosam ipsa debitis!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam distinctio officia fuga
+                    aperiam, ex, doloribus consectetur accusantium beatae officiis ad dolorum itaque expedita, vero
+                    temporibus? Omnis laboriosam ipsa debitis!</p>
             </div>
-            
-            <img src="images/bob.jpg" class="grid-item" alt="">
+
+            <img src="images/bob.jpg" class="grid-item"
+                alt="A wide frame, centered shot, of a man sitting in front of an exposed white-beige brick wall, photos on the left and a potted plant on the right. The man wears glasses and a black and white flannel over a black shirt. They have a beard and short haircut.">
 
             <div class="grid-item">
                 <h3>Bob Rite</h3>
                 <h4>CFO and Co-Owner</h4>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda harum tenetur eos quod placeat ipsa at reprehenderit deserunt quidem fuga nesciunt error incidunt, quae qui quis odit asperiores. Exercitationem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda harum tenetur eos quod placeat
+                    ipsa at reprehenderit deserunt quidem fuga nesciunt error incidunt, quae qui quis odit asperiores.
+                    Exercitationem!</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="wrapper"> <!-- Wrapper Class centers and adds margin -->
         <h2>Contact Us</h2>
-        <div class="flex-info"> <!-- Contact information displayed in flex. On desktop, first row: form and map 50% using flex-basis and order, second row: chart 100%-->
+        <div class="flex-info">
+            <!-- Contact information displayed in flex. On desktop, first row: form and map 50% using flex-basis and order, second row: chart 100%-->
             <!-- Message Form -->
             <div class="message">
                 <h3>Send Us A Message</h3>
@@ -190,7 +214,7 @@
                     </fieldset>
                 </form>
             </div>
-            
+
             <!-- Hours Of Operation Chart -->
             <div class="operation">
                 <h3>Hours Of Operation</h3>
@@ -212,7 +236,7 @@
                             <td>Closed</td>
                         </tr>
                     </tbody>
-                </table> 
+                </table>
             </div>
 
             <!-- iFrame Map -->
@@ -220,8 +244,8 @@
                 <h3>Location</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268326!2d-75.75750062420553!3d45.349937241056004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1721830485334!5m2!1sen!2sca"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -231,7 +255,6 @@
         <p>&copy; Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
     </footer>
-
 </body>
 
 </html>
