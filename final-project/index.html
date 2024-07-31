@@ -27,39 +27,44 @@
     <!-- ADD CSS RESET -->
     <!-- Header: Contains Nav Bar and Welcome Landing-->
     <header>
-        <nav class="wrapper"> <!-- display inline on desktop -->
-            <img src="images\logo.png"
-                alt="Square logo of three pale yellow stars on dark gold background that clip on the edges of the square and cut it off">
+        <nav> <!-- display inline on desktop -->
+            <div class="wrapper"> <!-- Wrapper Class centers and adds margin -->
+                <img src="images\logo.png"
+                    alt="Square logo of three pale yellow stars on dark gold background that clip on the edges of the square and cut it off">
 
-            <!-- Navigation Links -->
-            <ul> <!-- remove list decorations and link styling. display inline on desktop. Add padding, etc to buttons -->
-                <li><a href="#">Home</a></li> <!-- change background and text color of first child -->
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                <!-- Navigation Links -->
+                <ul> <!-- remove list decorations and link styling. display inline on desktop. Add padding, etc to buttons -->
+                    <li class="highlight"><a href="#">Home</a></li> <!-- change background and text color of first child -->
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-            <!-- Search Bar -->
-            <form action="#">
-                <input type="text" placeholder="Search" name="search">
-                <!-- Font Awesome Integrated Symbol: Search. Used Inline -->
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+                <!-- Search Bar -->
+                <form action="#">
+                    <input type="text" placeholder="Search" name="search">
+                    <!-- Font Awesome Integrated Symbol: Search. Used Inline -->
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
         </nav>
 
-        <div> <!-- background image main-banner-->
-            <div class="wrapper transparent">
-                <!-- Wrapper Class centers and adds margin, transparent adds rgba background -->
-                <h1>Welcome To Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit culpa repellendus reprehenderit
-                    corrupti hic ipsam nostrum totam tenetur non illum excepturi harum doloribus esse natus at, dicta ad
-                    reiciendis illo!</p>
+        <div class="banner"> <!-- background image main-banner-->
+            <div class="transparent">
+                 <div class="wrapper"> <!-- Wrapper Class centers and adds margin, transparent adds rgba background. Indented separate div from transparent since background color bleeds on mobile, but the content doesn't. -->
+                    <h1>Welcome To Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit culpa repellendus reprehenderit
+                        corrupti hic ipsam nostrum totam tenetur non illum excepturi harum doloribus esse natus at, dicta ad
+                        reiciendis illo!
+                    </p>
 
-                <a class="button" href="#contact"> <!-- Background color, padding -->
-                    <!-- Font Awesome Integrated Symbol: Right Facing Caret. Used Inline Throughout-->
-                    <h4>Connect With Us <i class="fa-solid fa-caret-right"></i></h4>
-                </a>
+                    <a class="button" href="#contact"> <!-- Background color, padding -->
+                        <!-- Font Awesome Integrated Symbol: Right Facing Caret. Used Inline Throughout-->
+                        Connect With Us <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -72,17 +77,15 @@
             <!-- Float, width 50% on desktop-->
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod sunt repellat, exercitationem porro ea
-                ratione vitae recusandae molestias quis quia quam laudantium quos? Consequatur ea ipsum eveniet in eius!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
+                ratione vitae recusandae molestias quis quia quam laudantium quos? Consequatur ea ipsum eveniet in eius!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
                 voluptatibus magni nihil minima qui repudiandae dolorum nisi suscipit, libero ut alias. Ullam quisquam
-                quae
-                officiis.
-            </p>
+                quae officiis.</p>
         </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="wrapper">
+    <section id="services">
         <!-- Flex layout on desktop of child divs. section#services > .button styling consistent background / padding other than last child which is semi transparent with border.-->
 
         <h2>Our Services</h2>
@@ -146,14 +149,14 @@
         </div>
 
         <!-- Our Vision Section: Separated Wrapper Section for Background-Image bleed -->
-        <div> <!-- Background Image: vision -->
+        <div class="banner"> <!-- Background Image: vision -->
             <div class="wrapper">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ex voluptatibus quo est, labore beatae,
                     quam
                     expedita eius deleniti facilis quidem harum obcaecati rem corporis culpa laboriosam omnis unde
                     blanditiis.</p>
-                <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
+                <a href="#" class="button">Learn More <i class="fa-solid fa-caret-right"></i></a>
             </div>
         </div>
     </section>
