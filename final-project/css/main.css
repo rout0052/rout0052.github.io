@@ -57,6 +57,7 @@ table {
 */
 
 /*
+* COLOR PALETTE
 * Dark Yellow: #c78b07
 * Light Yellow: #ffe6ac
 * Grey: #222
@@ -66,6 +67,10 @@ table {
 /* DEFAULT MOBILE SETTINGS */
 
 /* Sets the default font-family as Open Sans*/
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Open Sans", sans-serif;    
 }
@@ -80,7 +85,7 @@ h2 {
 h3 {
     font-size:1.5rem;
     font-weight:700;
-    margin-top:20px;
+    margin-top:0px;
     margin-bottom:10px;
 }
 
@@ -97,6 +102,7 @@ p {
 
 .wrapper, section#services > h2 {
     width:95%;
+    max-width:1200px;
     margin:auto;
 }
 
@@ -104,7 +110,9 @@ p {
 a {
     color:black;
     text-decoration: none;
+
 }
+
 
 
 /* Navigation Settings */
@@ -114,34 +122,30 @@ nav {
 }
 
 /* Nav Logo */
-nav div.wrapper > img {
-    background-color: #c78b07;
+nav div.logo {
+    background-color:#c78b07;
 }
 
 /* Nav List Items */
-nav ul {
+nav div.tabs {
     text-align:center;
     margin-top:none;
     
 }
 
-nav ul > li {
-   /* Add padding*/
+nav div.tabs > .tab {
     padding:5%;
     font-size: 1rem;
 }
 
-
-nav ul > li a {
+nav div.tabs a {
     color:#c78b07;
+    padding:20px;
+    display:block;
 }
 
-nav ul li.highlight {
-    background-color: #c78b07;
-    color:#222;
-}
-
-li.highlight > a {
+nav div.tabs .tab:first-child {
+    background-color:#c78b07;
     color:#222;
 }
 
@@ -159,6 +163,7 @@ nav form * {
 nav form > input {
     font-size:1rem;
     width:97.5%;
+    border:none;
 }
 
 nav form > button {
@@ -174,6 +179,7 @@ nav form > button {
 
 header div.banner {
     background-image:url("../images/main-banner.jpg");
+    background-position:center;
     background-size:cover;
     padding-top:10%;
     padding-bottom:10%;
@@ -195,8 +201,6 @@ header div.transparent h1{
 }
 
 header div.transparent p {
-    font-size:0.7rem;
-    font-weight:450;
     margin-bottom:2.5rem;
 }
 
@@ -212,13 +216,17 @@ section#about {
     background-color:#ffe6ac;
 }
 
+section#about div.wrapper {
+    display:grid;
+}
+
 section#about img {
     width:100%;
 }
 
 section#about p {
     padding-bottom:5px;
-    font-size:0.75rem;
+    line-height: 1.5;
 }
 
 
@@ -256,6 +264,7 @@ section#services a.button {
 section#services .banner {
     color:white;
     background-image:url(../images/vision.jpg);
+    background-position:center;
     background-size:cover;
     color:white;
     padding-top:5%;
@@ -283,6 +292,10 @@ section#team div.grid-item {
     margin-bottom:0.5rem;
 }
 
+section#team div.grid-item h3 {
+    padding-top:10px;
+}
+
 section#team div.grid-item * {
     margin-left:10px;
     margin-right:10px;
@@ -298,8 +311,8 @@ section#team hr {
 }
 
 /* Contact Us Section */
-section#contact div.message h3 {
-    margin-top:10px;
+section#contact div.flex-info > div {
+    padding-bottom:20px;
 }
 
 section#contact div.message fieldset * {
@@ -309,12 +322,11 @@ section#contact div.message fieldset * {
     margin-bottom:0.5rem;
 }
 
-section#contact div.message input {
+section#contact div.message input, section#contact div.message textarea {
     width:97.5%;
 }
 
 section#contact div.message textarea {
-    width:97.5%;
     resize:none;
 }
 
@@ -342,8 +354,14 @@ section#contact div.operation th, section#contact div.operation td {
     padding:10px;
 }
 
+section#contact div.map iframe {
+    width:100%;
+    height:450px;
+}
+
 /* Footer */
 footer {
+    color:#c78b07;
     background-color: #222;
     padding-top:20px;
 }
@@ -354,9 +372,171 @@ footer p {
 
 footer a {
     text-decoration-line: underline;
-}
-footer p, footer a {
     color:#c78b07;
-    width:95%;
-    margin:auto;
+}
+
+@media screen and (min-width: 760px){
+    .wrapper, section#services > h2 {
+        width:90%;
+    }
+
+    p {
+        font-size:0.9rem;
+    }
+
+    h4 {
+        font-size:1rem;
+    }
+
+    /* Desktop Nav Settings */
+    nav div.wrapper {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+    }
+
+    nav div.logo {        
+        flex-basis:7.5%;
+        background-color:transparent;
+        width:fit-content;
+        
+    }
+
+    nav div.logo img {
+        width:100%;
+    }
+
+    nav div.tabs {
+        display:inline-flex;
+        flex-basis:50%;
+        justify-content: space-between;
+        
+    }
+   
+    nav div.tabs a.tab {
+        white-space: nowrap; /* Prevents text wrap of tabs*/
+        padding:18px 20px 18px 20px;
+    }
+    
+    nav div.tabs, nav div.logo {
+        margin-right:2%;
+    }
+
+    nav form {
+        flex-basis:30%;
+        padding-bottom:0%;
+        
+    }
+    
+
+    /* Desktop Welcome Splash*/
+    header div.transparent {
+        width:95%;
+        margin:auto;
+    }
+
+    header div.transparent h1 {
+        margin-left:0%;
+        font-size:4rem;
+    }
+
+
+    /* Desktop About Us Section */
+    section#about div.wrapper {
+        grid-template-columns: 1fr 1fr;
+        column-gap:10px;
+        align-items: center;
+        padding:20px;
+    }
+
+
+    section#about p {
+        padding-bottom:10px;
+        font-size:1.25vw;
+        
+    }
+
+    /* Desktop Services Section */
+    section#services > div:not(h2), section#services > div:not(.banner) {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    section#services > .serve-boxes > .serve-items:nth-child(1), section#services > .serve-boxes > .serve-items:nth-child(2) {
+        flex-basis:calc(50% - 5px);
+    }
+
+    section#services > .serve-boxes > .serve-items:nth-child(3), section#services > .serve-boxes > .serve-items:nth-child(4), section#services > .serve-boxes > .serve-items:nth-child(5) {
+        flex-basis:calc(33% - (10px / 2));
+        margin-top:10px;
+    }
+
+    section#services > .serve-boxes > .serve-items:nth-child(1), section#services > .serve-boxes > .serve-items:nth-child(3), section#services > .serve-boxes > .serve-items:nth-child(4) {
+        margin-right:10px;
+    }
+
+    section#services > .serve-boxes > .serve-items:nth-child(5) {
+        flex-grow:1;
+    }
+
+
+    /* Desktop Our Team Section */
+    .grid-team {
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        
+    }
+    
+    div.grid-team > .grid-item:nth-child(4) {
+        grid-column: 1;
+        grid-row:2;
+    }
+    div.grid-team > .grid-item:nth-child(3) {
+        grid-column: 2;
+        grid-row:2;
+    }
+    
+    div.grid-item {
+        background-color: bisque;
+        padding:15px;
+        
+    }
+
+    section#team div.grid-item {
+        margin-bottom:0;
+    }
+
+    /* Desktop Contact Us Section */
+
+    section#contact > .flex-info {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap:10px;
+        column-gap:10px;
+        grid-template-areas: "form map" "chart chart";
+        
+        margin-bottom:10px;
+    }
+
+    section#contact .flex-info .message {
+        grid-area:form;
+    } 
+
+    section#contact .flex-info .operation {
+        grid-area:chart;
+    } 
+
+    section#contact .flex-info .map {
+        grid-area:map;
+    } 
+
+    section#contact div.map iframe {
+        height:350px;
+    }
+
+    section#contact .operation th, section#contact .operation td  {
+        font-size:0.9rem;
+    }
 }
