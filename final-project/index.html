@@ -29,18 +29,19 @@
     <header>
         <nav> <!-- display inline on desktop -->
             <div class="wrapper"> <!-- Wrapper Class centers and adds margin -->
-                <img src="images\logo.png"
+                <div class="logo">
+                    <img src="images\logo.png"
                     alt="Square logo of three pale yellow stars on dark gold background that clip on the edges of the square and cut it off">
+                </div>
 
                 <!-- Navigation Links -->
-                <ul> <!-- remove list decorations and link styling. display inline on desktop. Add padding, etc to buttons -->
-                    <li class="highlight"><a href="#">Home</a></li>
-                    <!-- change background and text color of first child -->
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="tabs">
+                    <a class="tab highlight" href="#">Home</a>
+                    <a class="tab" href="#about">About Us</a>
+                    <a class="tab" href="#services">Services</a>
+                    <a class="tab" href="#team">Team</a>
+                    <a class="tab" href="#contact">Contact</a>
+                </div> 
 
                 <!-- Search Bar -->
                 <form action="#">
@@ -77,14 +78,17 @@
         <div class="wrapper"> <!-- Wrapper Class centers and adds margin -->
             <img src="images\about-us.jpg"
                 alt="Open concept room with wooden floors and brick walls with open doors that lead to an outdoor patio. In the forefront of the picture is a ping-pong table with two paddles holding a ball between them. In the background there is a long wooden table with black metal framed chairs, a dark blue couch, and plants.">
-            <!-- Float, width 50% on desktop-->
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod sunt repellat, exercitationem porro ea
-                ratione vitae recusandae molestias quis quia quam laudantium quos? Consequatur ea ipsum eveniet in eius!
-            </p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
-                voluptatibus magni nihil minima qui repudiandae dolorum nisi suscipit, libero ut alias. Ullam quisquam
-                quae officiis.</p>
+            
+                <div class="content">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod sunt repellat, exercitationem porro ea
+                        ratione vitae recusandae molestias quis quia quam laudantium quos? Consequatur ea ipsum eveniet in eius!
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
+                        voluptatibus magni nihil minima qui repudiandae dolorum nisi suscipit, libero ut alias. Ullam quisquam
+                        quae officiis.</p>
+                </div>
+                
         </div>
     </section>
 
@@ -96,7 +100,7 @@
 
         <!-- Divs With Each Service - Flex Layout On Desktop -->
         <div class="serve-boxes wrapper">
-            <div>
+            <div class="serve-items">
                 <img src="images\digital.jpg"
                     alt="Over the shoulder shot of a person on their laptop, typing on the laptop with their left hand, and holding their phoen in their right. The blurred background is in a cafe.">
                 <h3>Digital Transformation</h3>
@@ -107,7 +111,7 @@
                 <a href="#" class="button">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
 
-            <div>
+            <div class="serve-items">
                 <img src="images\marketing.jpg"
                     alt="Low angle shot of a silver laptop that reflects on the table it sits on. On the screen there are various charts and graphs in blue-teal-purple colours.">
                 <h3>Marketing</h3>
@@ -119,7 +123,7 @@
                 <a href="#" class="button">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
 
-            <div>
+            <div class="serve-items">
                 <img src="images\video.jpg"
                     alt="Right hand holding an older iPhone that is on the loading screen for Youtube.">
                 <h3>Video Production</h3>
@@ -130,7 +134,7 @@
                 <a href="#" class="button">Video Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
 
-            <div>
+            <div class="serve-items">
                 <img src="images/web.jpg"
                     alt="A cell phone and a pen on a coiled grid notebook with bright blue margins. The phone is an Android phone, open to the account creation page of Instagram.">
                 <h3>Web Development</h3>
@@ -141,7 +145,7 @@
                 <a href="#" class="button">Web Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
 
-            <div>
+            <div class="serve-items">
                 <img src="images\print.jpg"
                     alt="There is a line of newspaper boxes for different organizations, in different colours and heights, sitting on a sidewalk in a metropolitan area.">
                 <h3>Print</h3>
@@ -251,7 +255,7 @@
                 <h3>Location</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268326!2d-75.75750062420553!3d45.349937241056004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1721830485334!5m2!1sen!2sca"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -259,9 +263,10 @@
 
     <!-- Footer with Copyright Information-->
     <footer> <!-- Background and text color -->
-        <p>&copy; Copyright Three Star Media, 2020</p>
-        <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+        <div class="wrapper">
+            <p>&copy; Copyright Three Star Media, 2020</p>
+            <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
     </footer>
 </body>
-
 </html>
