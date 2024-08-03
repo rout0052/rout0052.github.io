@@ -57,24 +57,28 @@ table {
 */
 
 /*
-* COLOR PALETTE
-* Dark Yellow: #c78b07
-* Light Yellow: #ffe6ac
-* Grey: #222
-* White: #fff
+*
+*  COLOR PALETTE
+*  Dark Yellow: #c78b07
+*  Light Yellow: #ffe6ac
+*  Dark Grey: #222
+*  White: #fff
+*
 */
 
 /* DEFAULT MOBILE SETTINGS */
 
-/* Sets the default font-family as Open Sans*/
+/* Changes box-sizing to calculate width and height based on the size of the entire box, not just the content */
 html {
     box-sizing: border-box;
 }
 
+/* Sets the default font-family as Open Sans */
 body {
     font-family: "Open Sans", sans-serif;    
 }
 
+/* Global text adjustments for different tag types */
 h2 {
     font-weight:700;
     font-size:2.5rem;
@@ -100,7 +104,8 @@ p {
     
 }
 
-.wrapper, section#services > h2 {
+/* Margin on the webpage, automatically centered. Maximum width of the .wrapper content is 1200px */
+.wrapper {
     width:95%;
     max-width:1200px;
     margin:auto;
@@ -110,62 +115,70 @@ p {
 a {
     color:black;
     text-decoration: none;
-
 }
-
-
 
 /* Navigation Settings */
 
+/* Sets background color of navigation to dark grey #222 */
 nav {
     background-color:#222;
 }
 
 /* Nav Logo */
+
+/* Sets the div.logo background color that wraps around the image tag to #c78b07 to create the stretched background on mobile */
 nav div.logo {
     background-color:#c78b07;
 }
 
 /* Nav List Items */
-nav div.tabs {
+
+/* Removes the margin from the top of the navigation li, and centers the text */
+nav ul {
     text-align:center;
-    margin-top:none;
-    
+    margin-top:none;    
 }
 
-nav div.tabs > .tab {
-    padding:5%;
+/* Adds padding, font-size, removes list styles, and displays on block on mobile */
+nav ul > li {
     font-size: 1rem;
-}
-
-nav div.tabs a {
-    color:#c78b07;
+    list-style-type: none;
     padding:20px;
     display:block;
 }
 
-nav div.tabs .tab:first-child {
+/* Applies #c78b07 as colors for all navigation links in the ul. Needs to be specifically on the link, because of the recolor necessary for resetting from the automatically link styling */
+nav ul a {
+    color:#c78b07;
+}
+
+/* Selects the first list item in the navigations ul, and sets the background color as #c78b07 */
+nav ul li:first-child {
     background-color:#c78b07;
+}
+
+/* Selects the first list item in the navigations ul's link, and changes the color to dark grey #222 */
+nav ul li:first-child > a {
     color:#222;
 }
 
 /* Nav Search Bar */
+
+/* Adds bottom padding beneath the form, makes it stretch entirely across the wrapper, and display inline-flex - the button and input together */
 nav form {
     padding-bottom:3%;
     width:100%;
     display:inline-flex;
 }
 
-nav form * {
-    border-radius: 0%;
-}
-
+/* Removes the border from the input, changes the font-size and width of the input of the search bar */
 nav form > input {
     font-size:1rem;
     width:97.5%;
     border:none;
 }
 
+/* Unsets all of the default button settings, and adds padding, colors, and the border */
 nav form > button {
     all:unset;
     color:#c78b07;
@@ -177,6 +190,7 @@ nav form > button {
 
 /* Welcome Splash Section */
 
+/* Adds the background image information (file, centers the images and has it cover the whole size), and adds padding to the top and bottom (not the sides on mobile)*/
 header div.banner {
     background-image:url("../images/main-banner.jpg");
     background-position:center;
@@ -185,66 +199,78 @@ header div.banner {
     padding-bottom:10%;
 }
 
-div.transparent {
+/* Sets the text block with a semi-transparent grey background (34, 34, 34 = #222), a top and bottom padding and line-height */
+header div.transparent {
     background-color: rgba(34, 34, 34, 0.75);
     color:white;
     padding-top:8%;
     padding-bottom:8%;
     line-height:1.3;
-
 }
 
+/* Add styling to h1 text in the transparent text block on the splash page */
 header div.transparent h1{
     font-weight:700;
     font-size:3rem;
     margin-bottom:20px;
 }
 
+/* Adds bottom margin to p text in the transparent text block on the splash page */
 header div.transparent p {
     margin-bottom:2.5rem;
 }
 
+/* Styles the front page button with padding and background-color */
 header div.transparent a.button {
     padding:25px;
     background-color:#c78b07;
 }
 
 /* About Us Section */
+
+/* Adds top and bottom padding and background color to the about us section */
 section#about {
     padding-top:10px;
     padding-bottom:10px;
     background-color:#ffe6ac;
 }
 
+/* Displays about us section in a grid */
 section#about div.wrapper {
     display:grid;
 }
 
+/* Displays the about us image at 100% width (on mobile , changes for desktop) */
 section#about img {
     width:100%;
 }
 
+/* Styles text in the paragraph tag */
 section#about p {
     padding-bottom:5px;
     line-height: 1.5;
 }
 
-
 /* Our Services Section */
+
+/* Adds line-height to the services section */
 section#services * {
-    line-height:1.3;
-    
+    line-height:1.3;    
 }
 
+/* Adds padding and margin to the bottom of each div in services. Padding within the box, the margin spacing the boxes apart */
 section#services > .serve-boxes > div {
     background-color:#ffe6ac;    
     padding-bottom:2.5rem;
     margin-bottom:0.5rem;
 }
 
+/* Sets the image width as 100% of the div */
 section#services div.serve-boxes img {
     width:100%;
 }
+
+/* Styles text in services section */
 section#services p {
     margin-bottom:2.5rem;
 }
@@ -252,6 +278,7 @@ section#services p, section#services h3, section#services a.button {
     padding-left:10px;
 }
 
+/* Styles buttons in services with dark grey background, white text, margins and padding */
 section#services a.button {
     padding:25px;
     background-color:#222;
@@ -261,60 +288,70 @@ section#services a.button {
 
 /* Our Vision Section */
 
+/* Sets the background image, with a centered position, that covers the whole space. Styles the text with padding, and white color */
 section#services .banner {
-    color:white;
     background-image:url(../images/vision.jpg);
     background-position:center;
     background-size:cover;
     color:white;
     padding-top:5%;
     padding-bottom:8%;
-    margin-bottom:2.5rem;
 }
 
-
+/* Adjusts the button in the 'Our Vision' section of the services page - changes the color to 50% transparency, with a #c78b07 border */
 section#services div.banner a.button {
     background-color:rgba(34, 34, 34, 0.5);
     border:1px solid #c78b07;
 }
 
 /* Our Team Section */
+
+/* Displays the team section as grid. */
 section#team div.grid-team {
     display:grid;
 }
 
+/* Sets the image as taking 100% of the width */
 section#team img {
     width:100%;
 }
 
+/* Adds a background color #ffe6ac to the team text divs, and a margin beneath to separate (this is removed on desktop) */
 section#team div.grid-item {
     background-color:#ffe6ac;
     margin-bottom:0.5rem;
 }
 
+/* Adds top padding to the h3 with the team member name */
 section#team div.grid-item h3 {
     padding-top:10px;
 }
 
+/* Adds left and right margin to all children of the text div with grid-item class */
 section#team div.grid-item * {
     margin-left:10px;
     margin-right:10px;
 }
 
+/* Adds padding to the bottom of the paragraph */
 section#team div.grid-item p {
     padding-bottom:20px;
 }
 
+/* Changes the horizontal line to the color #c78b07 with a shorted margin-top (standard margin top and bottom is 0.5rem)*/
 section#team hr {
     color:#c78b07;
     margin-top:0.2rem;
 }
 
 /* Contact Us Section */
-section#contact div.flex-info > div {
+
+/* Adds 20px of padding beneath each section of the contact info */
+section#contact div.grid-info > div {
     padding-bottom:20px;
 }
 
+/* Displays each part of the form fieldset on different lines (block) and styles the text */
 section#contact div.message fieldset * {
     display:block;
     font-size:0.7rem;
@@ -322,14 +359,17 @@ section#contact div.message fieldset * {
     margin-bottom:0.5rem;
 }
 
+/* Displays the inputs and text areas as 97.5% width */
 section#contact div.message input, section#contact div.message textarea {
     width:97.5%;
 }
 
+/* Disables resize of textareas */
 section#contact div.message textarea {
     resize:none;
 }
 
+/* Styles the button with font changes, color #c78b07 text, background-color #222, no border, and padding */
 section#contact div.message button {
     font-size:1rem;
     font-weight:500;
@@ -340,47 +380,60 @@ section#contact div.message button {
 }
 
 /* Hours Of Operation Section */
+
+/* Makes table 100% width with a new font-size. */
 section#contact div.operation table {
     width:100%;
     font-size:0.75rem;
 }
 
-section#contact div.operation th, section#contact div.operation thead {
+/* Adds background color #ffe6ac to the head of the table */
+section#contact div.operation thead {
     background-color: #ffe6ac;
 }
 
+/* Adds border and padding to all table cells */
 section#contact div.operation th, section#contact div.operation td {
     border: 2px solid #222;
     padding:10px;
 }
 
+/* Sets the width of the iframe as 100%, with a height of 450px */
 section#contact div.map iframe {
     width:100%;
     height:450px;
 }
 
 /* Footer */
+
+/* Sets the background color as #222, text color #c78b07, with top padding */
 footer {
     color:#c78b07;
     background-color: #222;
     padding-top:20px;
 }
 
+/* Adds padding beneath both paragraphs - adequately spaces the two lines */
 footer p {
     padding-bottom:15px;
 }
 
+/* Adds the underline back to the line, and colored it #c78b07 */
 footer a {
     text-decoration-line: underline;
     color:#c78b07;
 }
 
+
+/*** DESKTOP MEDIA QUERIES - STYLING FOR OVER 760PX  ***/
 @media screen and (min-width: 760px){
-    .wrapper, section#services > h2 {
+    /* Changes the margins to 10% from 5% */
+    .wrapper {
         width:90%;
     }
 
-    p {
+    /* Changes text sizes for base text sizes */
+    p  {
         font-size:0.9rem;
     }
 
@@ -389,6 +442,8 @@ footer a {
     }
 
     /* Desktop Nav Settings */
+
+    /* Changes the navigation to flex display, items space divided between each element, items centered on the cross axis, and padding */ 
     nav div.wrapper {
         display:flex;
         justify-content: space-between;
@@ -396,53 +451,52 @@ footer a {
         padding:10px;
     }
 
+    /* Sets the logo div to take up 10% of the flex, with a transparent background */
     nav div.logo {        
-        flex-basis:7.5%;
+        flex-basis:10%;
         background-color:transparent;
-        width:fit-content;
-        
     }
 
-    nav div.logo img {
-        width:100%;
-    }
-
-    nav div.tabs {
+    /* Disaplys the underorder list as inline flex, space divided between each element, taking up 50% of the flex */
+    nav ul {
         display:inline-flex;
         flex-basis:50%;
         justify-content: space-between;
-        
     }
    
-    nav div.tabs a.tab {
-        white-space: nowrap; /* Prevents text wrap of tabs*/
-        padding:18px 20px 18px 20px;
+    /* Prevents text wrap of tabs for the links in the navigation */
+    nav ul li a {
+        white-space: nowrap;
     }
     
-    nav div.tabs, nav div.logo {
+    /* Adds a margin to the right of the underordered list and logo to keep spaced sections even when sized down */
+    nav ul, nav div.logo {
         margin-right:2%;
     }
 
+    /* Removes the padding from the mobile styling, and makes the form take up 30% of the flex */
     nav form {
         flex-basis:30%;
         padding-bottom:0%;
-        
     }
     
-
     /* Desktop Welcome Splash*/
+    
+    /* Changes the transparent text section to a width of 95% with auto margins, as it expands past the wrapper on diesktop */
     header div.transparent {
         width:95%;
         margin:auto;
     }
 
+    /* Styles the text of the transparent text section h1 */
     header div.transparent h1 {
         margin-left:0%;
         font-size:4rem;
     }
 
-
     /* Desktop About Us Section */
+
+    /* Makes a grid section for the about section - two columns, a 10px gap between them, with cross axis center aligned, with padding */
     section#about div.wrapper {
         grid-template-columns: 1fr 1fr;
         column-gap:10px;
@@ -450,67 +504,72 @@ footer a {
         padding:20px;
     }
 
-
+    /* Adds bottom padding, and a font size that adjusts to viewport width - to prevent the text from stretching over the image  */
     section#about p {
         padding-bottom:10px;
         font-size:1.25vw;
-        
     }
 
     /* Desktop Services Section */
+
+    /* Displays the services section, minus the h2 and the banner section, in flex, with wrapping on multiple rows, and gaps of 10px for rows and 20px for columns */
     section#services > div:not(h2), section#services > div:not(.banner) {
         display:flex;
         flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap:20px;
     }
     
+    /* Selects the 1st and 2nd service child and displays flex basis of 50% minus 5px of padding */
     section#services > .serve-boxes > .serve-items:nth-child(1), section#services > .serve-boxes > .serve-items:nth-child(2) {
-        flex-basis:calc(50% - 5px);
+        flex-basis:calc(50% - 10px);
     }
 
+    /* Selects the 3rd, 4th, and 5th child and displays flex basis of 33% minus 5px of padding with a margin to separate*/
     section#services > .serve-boxes > .serve-items:nth-child(3), section#services > .serve-boxes > .serve-items:nth-child(4), section#services > .serve-boxes > .serve-items:nth-child(5) {
-        flex-basis:calc(33% - (10px / 2));
-        margin-top:10px;
+        flex-basis:calc(33% - 10px);
     }
 
-    section#services > .serve-boxes > .serve-items:nth-child(1), section#services > .serve-boxes > .serve-items:nth-child(3), section#services > .serve-boxes > .serve-items:nth-child(4) {
-        margin-right:10px;
-    }
-
+    /* Grows the 5th child to grow to take up the remaining 1% of space on the row */
     section#services > .serve-boxes > .serve-items:nth-child(5) {
         flex-grow:1;
     }
 
-
     /* Desktop Our Team Section */
+
+    /* Creates a 2x2 grid */
     .grid-team {
         display:grid;
         grid-template-columns:repeat(2, 1fr);
         grid-template-rows:repeat(2, 1fr);
-        
     }
     
+    /* Selects the 4th grid item (Bob Rite's text) and changes its placement to (1,2) */
     div.grid-team > .grid-item:nth-child(4) {
         grid-column: 1;
         grid-row:2;
     }
+
+    /* Selects the 4th grid item (Bob Rite's image) and changes its placement to (2,2) */
     div.grid-team > .grid-item:nth-child(3) {
         grid-column: 2;
         grid-row:2;
     }
     
+    /* Adds padding to the divs with class grid-item, which are the text blocks */
     div.grid-item {
-        background-color: bisque;
-        padding:15px;
-        
+        padding:15px; 
     }
 
+    /* Removes the bottom margin from the mobile styling */
     section#team div.grid-item {
         margin-bottom:0;
     }
 
     /* Desktop Contact Us Section */
 
-    section#contact > .flex-info {
+    /* Displays the contact sections in a grid, with 2 columns, with 10px row/column gaps, and a template area with the first row having the form and the map, and the second row entirely showing the chart */
+    section#contact > .grid-info {
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap:10px;
@@ -520,22 +579,32 @@ footer a {
         margin-bottom:10px;
     }
 
-    section#contact .flex-info .message {
+    /* Assigns grid area 'form' */
+    section#contact .grid-info .message {
         grid-area:form;
     } 
 
-    section#contact .flex-info .operation {
+    /* Assigns grid area 'chart' */
+    section#contact .grid-info .operation {
         grid-area:chart;
     } 
 
-    section#contact .flex-info .map {
+    /* Assigns grid area 'map' */
+    section#contact .grid-info .map {
         grid-area:map;
     } 
 
+    /* Changes the form's font to 0.9rem */
+    section#contact div.message fieldset * {
+        font-size:0.9rem;
+    }
+
+    /* Changes the high of the iframe to 350px */
     section#contact div.map iframe {
         height:350px;
     }
 
+    /* Changes the table's font to 0.9rem */
     section#contact .operation th, section#contact .operation td  {
         font-size:0.9rem;
     }
