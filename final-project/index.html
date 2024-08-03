@@ -28,20 +28,20 @@
     <!-- Header: Contains Nav Bar and Welcome Landing-->
     <header>
         <nav> <!-- display inline on desktop -->
-            <div class="wrapper"> <!-- Wrapper Class centers and adds margin -->
+            <div class="wrapper">
                 <div class="logo">
                     <img src="images\logo.png"
                     alt="Square logo of three pale yellow stars on dark gold background that clip on the edges of the square and cut it off">
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="tabs">
-                    <a class="tab highlight" href="#">Home</a>
-                    <a class="tab" href="#about">About Us</a>
-                    <a class="tab" href="#services">Services</a>
-                    <a class="tab" href="#team">Team</a>
-                    <a class="tab" href="#contact">Contact</a>
-                </div> 
+                <ul> <!-- Display inline on desktop using flex. -->
+                    <li><a href="#">Home</a></li> <!-- Select first child and add different background color and text color -->
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
                 <!-- Search Bar -->
                 <form action="#">
@@ -87,19 +87,18 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sint eos dolores voluptatem
                         voluptatibus magni nihil minima qui repudiandae dolorum nisi suscipit, libero ut alias. Ullam quisquam
                         quae officiis.</p>
-                </div>
-                
+                </div>         
         </div>
     </section>
 
     <!-- Services -->
-    <section id="services">
+    <section id="services" class="wrapper"> <!-- Wrapper Class centers and adds margin -->
         <!-- Flex layout on desktop of child divs. section#services > .button styling consistent background / padding other than last child which is semi transparent with border.-->
 
         <h2>Our Services</h2>
 
         <!-- Divs With Each Service - Flex Layout On Desktop -->
-        <div class="serve-boxes wrapper">
+        <div class="serve-boxes">
             <div class="serve-items">
                 <img src="images\digital.jpg"
                     alt="Over the shoulder shot of a person on their laptop, typing on the laptop with their left hand, and holding their phoen in their right. The blurred background is in a cafe.">
@@ -204,7 +203,7 @@
 
     <section id="contact" class="wrapper"> <!-- Wrapper Class centers and adds margin -->
         <h2>Contact Us</h2>
-        <div class="flex-info">
+        <div class="grid-info">
             <!-- Contact information displayed in flex. On desktop, first row: form and map 50% using flex-basis and order, second row: chart 100%-->
             <!-- Message Form -->
             <div class="message">
