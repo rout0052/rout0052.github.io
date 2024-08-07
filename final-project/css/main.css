@@ -136,7 +136,7 @@ nav div.logo {
 /* Removes the margin from the top of the navigation li, and centers the text */
 nav ul {
     text-align:center;
-    margin-top:none;    
+    margin-top:0;    
 }
 
 /* Adds padding, font-size, removes list styles, and displays on block on mobile */
